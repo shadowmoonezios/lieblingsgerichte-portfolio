@@ -1,7 +1,7 @@
 {
   "name": "lieblingsgerichte-portfolio",
   "version": "1.0.0",
-  "description": "A portfolio for collecting and sharing favorite dishes",
+  "description": "A portfolio application for collecting and sharing favorite dishes and recipes",
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
