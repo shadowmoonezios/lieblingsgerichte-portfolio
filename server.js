@@ -12,6 +12,12 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/lieblings
   useUnifiedTopology: true
 }).then(() => console.log('MongoDB connected')).catch(err => console.log(err));
 
+// Error handling middleware
+app.use((err, req, res, next) => {
+  console.error(err.stack);
+  res.status(500).send('Something broke!');
+});
+
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
