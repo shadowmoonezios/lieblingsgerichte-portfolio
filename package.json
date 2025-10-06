@@ -1,13 +1,13 @@
 {
   "name": "lieblingsgerichte-portfolio",
   "version": "1.0.0",
-  "description": "A portfolio application for collecting and sharing favorite dishes and recipes",
+  "description": "A web application to collect, share, and discover favorite dishes and recipes.",
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
     "client": "npm start --prefix client",
     "server": "nodemon server.js",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "dev": "concurrently \"npm run server\" \"npm run client\"
   },
   "dependencies": {
     "express": "^4.18.3",
